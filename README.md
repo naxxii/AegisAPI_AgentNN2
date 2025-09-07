@@ -149,7 +149,7 @@ python -m aegisapi report
          ▼                       ▼                       ▼
 ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
 │     Planner     │    │    Executor     │    │     Healer      │
-│ (Strategy AI)   │    │   (Test Runner)  │    │  (Self-Healing) │
+│ (Strategy AI)   │    │   (Test Runner) │    │  (Self-Healing) │
 └─────────────────┘    └─────────────────┘    └─────────────────┘
          │                       │                       │
          └───────────────────────┼───────────────────────┘
