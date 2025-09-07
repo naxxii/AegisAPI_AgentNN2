@@ -1,0 +1,19 @@
+{
+  "field_renames": [
+    {
+      "schema": "User",
+      "from": "userName",
+      "to": "username",
+      "confidence": 1.0
+    }
+  ],
+  "status_changes": [
+    {
+      "path": "/users/{id}",
+      "method": "GET",
+      "added": [
+        "429"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+[
+  {
+    "type": "plan_created",
+    "ts": 1703123456,
+    "meta": {
+      "spec": "petstore.yaml",
+      "endpoints": 12
+    }
+  },
+  {
+    "type": "test_generated",
+    "ts": 1703123457,
+    "meta": {
+      "tests": 45,
+      "auth_profile": "none"
+    }
+  },
+  {
+    "type": "run_summary",
+    "ts": 1703123458,
+    "meta": {
+      "passed": 42,
+      "failed": 3,
+      "total": 45
+    }
+  },
+  {
+    "type": "heal_applied",
+    "ts": 1703123459,
+    "meta": {
+      "field": "status_code",
+      "confidence": 0.89
+    }
+  },
+  {
+    "type": "plan_created",
+    "ts": 1703123460,
+    "meta": {
+      "spec": "user_api.yaml",
+      "endpoints": 8
+    }
+  },
+  {
+    "type": "test_generated",
+    "ts": 1703123461,
+    "meta": {
+      "tests": 32,
+      "auth_profile": "bearer"
+    }
+  },
+  {
+    "type": "run_summary",
+    "ts": 1703123462,
+    "meta": {
+      "passed": 31,
+      "failed": 1,
+      "total": 32
+    }
+  },
+  {
+    "type": "heal_applied",
+    "ts": 1703123463,
+    "meta": {
+      "field": "response_schema",
+      "confidence": 0.92
+    }
+  },
+  {
+    "type": "plan_created",
+    "ts": 1703123464,
+    "meta": {
+      "spec": "payment_api.yaml",
+      "endpoints": 15
+    }
+  },
+  {
+    "type": "test_generated",
+    "ts": 1703123465,
+    "meta": {
+      "tests": 58,
+      "auth_profile": "oauth2"
+    }
+  }
+]

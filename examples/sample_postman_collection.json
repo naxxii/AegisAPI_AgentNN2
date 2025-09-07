@@ -1,0 +1,122 @@
+{
+  "info": {
+    "name": "Pet Store API Demo",
+    "description": "Sample Postman collection for AegisAPI AgentNN demonstration",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "version": "1.0.0"
+  },
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:4010",
+      "type": "string"
+    },
+    {
+      "key": "apiKey",
+      "value": "",
+      "type": "string"
+    }
+  ],
+  "item": [
+    {
+      "name": "Get All Users",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/users",
+          "host": ["{{baseUrl}}"],
+          "path": ["users"]
+        },
+        "description": "Retrieve a list of all users in the system"
+      },
+      "response": []
+    },
+    {
+      "name": "Get User by ID",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/users/{{userId}}",
+          "host": ["{{baseUrl}}"],
+          "path": ["users", "{{userId}}"]
+        },
+        "description": "Retrieve a specific user by their ID"
+      },
+      "response": []
+    },
+    {
+      "name": "Get All Posts",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/posts",
+          "host": ["{{baseUrl}}"],
+          "path": ["posts"]
+        },
+        "description": "Retrieve a list of all posts"
+      },
+      "response": []
+    },
+    {
+      "name": "Get Posts with Limit",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "Accept",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/posts?limit={{limit}}",
+          "host": ["{{baseUrl}}"],
+          "path": ["posts"],
+          "query": [
+            {
+              "key": "limit",
+              "value": "{{limit}}",
+              "description": "Limit the number of posts returned"
+            }
+          ]
+        },
+        "description": "Retrieve posts with a specified limit"
+      },
+      "response": []
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "exec": [
+          "// Set default values for variables",
+          "if (!pm.variables.get(\"userId\")) {",
+          "    pm.variables.set(\"userId\", \"1\");",
+          "}",
+          "if (!pm.variables.get(\"limit\")) {",
+          "    pm.variables.set(\"limit\", \"10\");",
+          "}"
+        ]
+      }
+    }
+  ]
+}

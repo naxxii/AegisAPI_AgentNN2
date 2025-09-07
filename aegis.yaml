@@ -1,0 +1,26 @@
+base_url: "http://localhost:4010"
+allowlist_domains: ["localhost","127.0.0.1"]
+rate_limit_per_sec: 5
+
+# Human Oversight Configuration
+human_oversight:
+  enabled: true
+  default_mode: "review"  # Options: "auto", "review", "interactive"
+  confidence_threshold: 0.6
+  require_approval_for_low_confidence: true
+
+# PII Protection
+pii_redaction:
+  enabled: true
+  fields: ["email","phone","ssn","token","password"]
+
+# Authentication Profiles
+auth_profiles:
+  none: {type: "none"}
+  api_key: {type: "api_key", header: "x-api-key", value_env: "API_KEY"}
+
+# Healing Configuration
+healing:
+  enable_self_healing: true
+  max_auto_heals_per_run: 10
+  audit_trail_enabled: true

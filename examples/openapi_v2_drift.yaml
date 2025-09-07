@@ -1,0 +1,65 @@
+openapi: 3.0.3
+info: {title: Demo Service, version: 2.0.0}
+servers: [{url: http://localhost:4010}]
+paths:
+  /users:
+    get:
+      summary: List users
+      responses:
+        '200':
+          description: ok
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  items:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/User'
+  /users/{id}:
+    get:
+      summary: Get user
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema: {type: integer}
+      responses:
+        '200':
+          description: ok
+          content:
+            application/json:
+              schema: {$ref: '#/components/schemas/User'}
+        '429': {description: rate limited}
+  /posts:
+    get:
+      summary: List posts
+      parameters:
+        - name: limit
+          in: query
+          required: true
+          schema: {type: integer}
+      responses:
+        '200':
+          description: ok
+          content:
+            application/json:
+              schema:
+                type: array
+                items: {$ref: '#/components/schemas/Post'}
+components:
+  schemas:
+    User:
+      type: object
+      required: [id, username, email]
+      properties:
+        id: {type: integer}
+        username: {type: string}
+        email: {type: string, format: email}
+    Post:
+      type: object
+      required: [id, title]
+      properties:
+        id: {type: integer}
+        title: {type: string}

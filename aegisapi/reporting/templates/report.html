@@ -1,0 +1,7 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>AegisAPI Report</title>
+<style>body{font-family:Arial;margin:24px}table{border-collapse:collapse;width:100%}td,th{border:1px solid #eee;padding:6px}</style>
+</head><body><h1>Agentic API Testing — Dashboard</h1>
+<p>Artifacts: <code>reports/junit.xml</code>, <code>reports/pytest_stdout.txt</code>, <code>reports/schemathesis.txt</code></p>
+<table><tr><th>#</th><th>Type</th><th>Summary</th><th>TS</th></tr>
+{% for e in recent %}<tr><td>{{ loop.index }}</td><td>{{ e.get("type") }}</td><td><pre style="white-space:pre-wrap">{{ e.get("summary","") }}</pre></td><td>{{ e.get("ts") }}</td></tr>{% endfor %}
+</table></body></html>

@@ -1,0 +1,21 @@
+{
+  "base_url": "http://localhost:4010",
+  "endpoints": [
+    {
+      "path": "/users",
+      "method": "GET",
+      "risk": 0.5
+    },
+    {
+      "path": "/users/{id}",
+      "method": "GET",
+      "risk": 0.5
+    },
+    {
+      "path": "/posts",
+      "method": "GET",
+      "risk": 0.5
+    }
+  ],
+  "coverage_target": 0.9
+}

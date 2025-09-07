@@ -1,0 +1,72 @@
+{"type": "run_started", "ts": 1755942574.2868903, "meta": {"action": "plan"}}
+{"type": "plan_created", "summary": "3 endpoints planned", "ts": 1755942574.3688352}
+{"type": "run_started", "ts": 1755942576.394773, "meta": {"action": "gen"}}
+{"type": "test_generated", "summary": "3 tests -> tests_generated", "ts": 1755942576.4587538}
+{"type": "run_started", "ts": 1755942576.9753082, "meta": {"action": "run"}}
+{"type": "run_summary", "summary": "pytest_return=1", "ts": 1755942600.940105}
+{"type": "run_started", "ts": 1755942893.0841641, "meta": {"action": "run"}}
+{"type": "run_summary", "summary": "pytest_return=1", "ts": 1755942912.4546852}
+{"type": "run_started", "ts": 1755943065.6237638, "meta": {"action": "heal"}}
+{"type": "heal_proposed", "summary": "{'field_renames': [{'schema': 'User', 'from': 'userName', 'to': 'username', 'confidence': 1.0}], 'status_changes': [{'path': '/users/{id}', 'method': 'GET', 'added': ['429']}]}", "ts": 1755943065.7004275}
+{"type": "heal_applied", "summary": "1 renames", "ts": 1755943065.73639}
+{"type": "run_started", "ts": 1755943073.363513, "meta": {"action": "gen"}}
+{"type": "test_generated", "summary": "3 tests -> tests_generated", "ts": 1755943073.4921863}
+{"type": "run_started", "ts": 1755943081.541106, "meta": {"action": "run"}}
+{"type": "run_summary", "summary": "pytest_return=1", "ts": 1755943099.3323119}
+{"type": "run_started", "ts": 1755944161.403332, "meta": {"action": "plan"}}
+{"type": "plan_created", "summary": "3 endpoints planned", "ts": 1755944161.4433186}
+{"type": "run_started", "ts": 1755944162.2225437, "meta": {"action": "gen"}}
+{"type": "test_generated", "summary": "3 tests -> tests_generated", "ts": 1755944162.3025239}
+{"type": "run_started", "ts": 1755944163.0125766, "meta": {"action": "run"}}
+{"type": "run_summary", "summary": "pytest_return=1", "ts": 1755944180.6024535}
+{"type": "run_started", "ts": 1755944182.4958901, "meta": {"action": "heal"}}
+{"type": "heal_proposed", "summary": "{'field_renames': [{'schema': 'User', 'from': 'userName', 'to': 'username', 'confidence': 1.0}], 'status_changes': [{'path': '/users/{id}', 'method': 'GET', 'added': ['429']}]}", "ts": 1755944182.583805}
+{"type": "heal_applied", "summary": "1 renames", "ts": 1755944182.6192951}
+{"type": "run_started", "ts": 1755944183.4653876, "meta": {"action": "gen"}}
+{"type": "test_generated", "summary": "3 tests -> tests_generated", "ts": 1755944183.5413587}
+{"type": "run_started", "ts": 1755944184.307111, "meta": {"action": "run"}}
+{"type": "run_summary", "summary": "pytest_return=1", "ts": 1755944200.8430405}
+{"type": "run_started", "ts": 1756280129.0030727, "meta": {"action": "plan"}}
+{"type": "plan_created", "summary": "3 endpoints planned", "ts": 1756280129.0923579}
+{"type": "run_started", "ts": 1756280136.8006878, "meta": {"action": "gen"}}
+{"type": "test_generated", "summary": "3 tests -> tests_generated", "ts": 1756280136.9123821}
+{"type": "run_started", "ts": 1756280147.2250874, "meta": {"action": "run"}}
+{"type": "run_summary", "summary": "pytest_return=1", "ts": 1756280176.572001}
+{"type": "run_started", "ts": 1756280207.647769, "meta": {"action": "heal"}}
+{"type": "heal_proposed", "summary": "{'field_renames': [{'schema': 'User', 'from': 'userName', 'to': 'username', 'confidence': 1.0}], 'status_changes': [{'path': '/users/{id}', 'method': 'GET', 'added': ['429']}]}", "ts": 1756280207.7887168}
+{"type": "run_started", "ts": 1756281356.7126546, "meta": {"action": "plan"}}
+{"type": "plan_created", "summary": "3 endpoints planned", "ts": 1756281356.7459438}
+{"type": "run_started", "ts": 1756283805.326821, "meta": {"action": "plan"}}
+{"type": "plan_created", "summary": "3 endpoints planned", "ts": 1756283805.3424377}
+{"type": "run_started", "ts": 1756283826.9377677, "meta": {"action": "gen"}}
+{"type": "test_generated", "summary": "3 tests -> tests_generated", "ts": 1756283827.089015}
+{"type": "run_started", "ts": 1756283862.9668317, "meta": {"action": "run"}}
+{"type": "run_summary", "summary": "pytest_return=1", "ts": 1756283888.0069666}
+{"type": "run_started", "ts": 1756283916.3992503, "meta": {"action": "heal"}}
+{"type": "heal_proposed", "summary": "{'field_renames': [{'schema': 'User', 'from': 'userName', 'to': 'username', 'confidence': 1.0}], 'status_changes': [{'path': '/users/{id}', 'method': 'GET', 'added': ['429']}]}", "ts": 1756283916.4773848}
+{"type": "run_started", "ts": 1756289589.2588985, "meta": {"action": "plan"}}
+{"type": "plan_created", "summary": "3 endpoints planned", "ts": 1756289589.3213942}
+{"type": "run_started", "ts": 1756289593.8222861, "meta": {"action": "gen"}}
+{"type": "test_generated", "summary": "3 tests -> tests_generated", "ts": 1756289593.9545245}
+{"type": "run_started", "ts": 1756289595.3673537, "meta": {"action": "run"}}
+{"type": "run_started", "ts": 1756289596.799556, "meta": {"action": "heal"}}
+{"type": "heal_proposed", "summary": "{'field_renames': [{'schema': 'User', 'from': 'userName', 'to': 'username', 'confidence': 1.0}], 'status_changes': [{'path': '/users/{id}', 'method': 'GET', 'added': ['429']}]}", "ts": 1756289596.9745781}
+{"type": "run_summary", "summary": "pytest_return=1", "ts": 1756289633.0078723}
+{"type": "run_started", "ts": 1756289949.8457332, "meta": {"action": "plan"}}
+{"type": "plan_created", "summary": "3 endpoints planned", "ts": 1756289949.861357}
+{"type": "run_started", "ts": 1756289992.6334603, "meta": {"action": "gen"}}
+{"type": "test_generated", "summary": "3 tests -> tests_generated", "ts": 1756289992.6981351}
+{"type": "run_started", "ts": 1756289995.2332864, "meta": {"action": "run"}}
+{"type": "run_started", "ts": 1756290002.581101, "meta": {"action": "heal"}}
+{"type": "heal_proposed", "summary": "{'field_renames': [{'schema': 'User', 'from': 'userName', 'to': 'username', 'confidence': 1.0}], 'status_changes': [{'path': '/users/{id}', 'method': 'GET', 'added': ['429']}]}", "ts": 1756290002.7373416}
+{"type": "run_summary", "summary": "pytest_return=1", "ts": 1756290029.1484606}
+{"type": "run_started", "ts": 1756290038.2953537, "meta": {"action": "plan"}}
+{"type": "plan_created", "summary": "3 endpoints planned", "ts": 1756290038.3422332}
+{"type": "run_started", "ts": 1756290142.7339187, "meta": {"action": "plan"}}
+{"type": "plan_created", "summary": "3 endpoints planned", "ts": 1756290142.7919457}
+{"type": "run_started", "ts": 1756290146.0765142, "meta": {"action": "gen"}}
+{"type": "test_generated", "summary": "3 tests -> tests_generated", "ts": 1756290146.2499855}
+{"type": "run_started", "ts": 1756290148.0299807, "meta": {"action": "run"}}
+{"type": "run_started", "ts": 1756290151.5851624, "meta": {"action": "heal"}}
+{"type": "heal_proposed", "summary": "{'field_renames': [{'schema': 'User', 'from': 'userName', 'to': 'username', 'confidence': 1.0}], 'status_changes': [{'path': '/users/{id}', 'method': 'GET', 'added': ['429']}]}", "ts": 1756290151.7156937}
+{"type": "run_summary", "summary": "pytest_return=1", "ts": 1756290183.603923}
